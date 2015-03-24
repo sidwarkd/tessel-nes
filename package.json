@@ -1,0 +1,28 @@
+{
+  "name": "tessel-nes",
+  "version": "1.0.0",
+  "description": "Original Nintendo Controller library for Tessel",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "hardware": {
+    "./examples": false
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tessel",
+    "nintendo",
+    "nes"
+  ],
+  "author": "Kevin Sidwar <sidwarkd@hardlysoftware.com> (http://www.microcasts.tv/)",
+  "license": "Public Domain",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sidwarkd/tessel-nes.git"
+  }
+}
