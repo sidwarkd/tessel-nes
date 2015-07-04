@@ -2,7 +2,9 @@
 A simple Tessel library for interacting with the original Nintendo controller
 
 ### Connection Information
-The original NES controller has a 7 pin connector but only 5 are actually used. The following image shows what the connections are when looking at the connector.
+The original NES controller has a 7 pin connector but only 5 are actually used. You'll need to cut off the connector end so you can attach the controller's wires to a breadboard or prototype board. If you don't want to permanently modify your NES controller, you can also purchase an "NES extension cable" that has a female connector on one end that you can cut off instead.
+
+The following image shows what the connections are when looking at the connector.
 
 <pre>
           +----> Power  (white)
@@ -18,7 +20,7 @@ The original NES controller has a 7 pin connector but only 5 are actually used. 
     +----------> Data   (yellow)
 </pre>
 
-The colors listed above are the most common but they aren't universal due to the huge number of knockoff controllers made. The best way to be sure is to use the continuity feature on your multimeter to see which wire goes to which hole on the connector after you cut it off. The connector image above shows which hole corresponds to which connection. Once you've identified the wires you can connect them to any port, including GPIO, on the Tessel as follows:
+The colors listed above are the most common but they aren't universal due to the huge number of knockoff controllers made. If you are using the female connector from an extension cable, the colors likely will not match between the two cables. The best way to be sure is to use the continuity feature on your multimeter to see which wire goes to which hole on the connector after you cut it off. The connector image above shows which hole corresponds to which connection. Once you've identified the wires you can connect them to any port, including GPIO, on the Tessel as follows:
 
 | Controller Connection | Tessel Port Connection |
 |-----------------------|------------------------|
@@ -27,6 +29,7 @@ The colors listed above are the most common but they aren't universal due to the
 | Latch                 | G1                     |
 | Data                  | MISO                   |
 | Pulse                 | SCK                    |
+
 
 
 ### Installation
